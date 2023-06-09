@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #00bbff;
+    height: 70px;
+
+
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    
+}
+header nav .per{
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header nav .D{
+    background-color: white;
+    width: 90px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header nav .E{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header nav .c{
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header nav .L{
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header nav .V{
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+/* header .head h1 {
+    color: white;
+} */
+
+header .head a {
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+}
+
+section {
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+
+section .container {
+    width: 24%;
+    border: 1px solid black;
+}
+
+section h1 {
+    margin-bottom: 20px;
+}
+
+
+
+
+.cart h2 {
+    color: red;
+}
+
+.cart p {
+    line-height: 25px;
+}
+
+
+
+.cart {
+    margin: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .sec {
+    display: flex;
+    column-gap: 2%;
+}
+
+section .sec .p1{
+    background-color: #00bbff;
+    
+}
+section .sec .p1 img{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+section .PR p{
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    /* background-color: blue; */
+}
+
+section .PR .K h1{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+section .PR .C h1{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+section .PR .N h1{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+section .PR .L h1{
+    font-size: 25px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+section .sec .text .E{
+    border-radius: 10px;
+    background-color: #00bbff;
+    box-shadow: 15px 15px 15px blue;
+    padding: 8px;
+    text-align: center;
+    /* font-size: 35px; */
+}
+section .sec .text .E h1{
+    font-size: 30px;
+}
+
+section .sec .text .D h1{
+    margin-top: 30px;
+    background-color: #00bbff;
+    font-size: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+section .sec .text .D p {
+    font-size: 15px;
+    line-height: 30px;
+
+
+}
+
+section .sec .F h1{
+    font-size: 25px;
+    margin-top: 20px;
+    background-color: #00bbff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+section .sec .F p{
+    line-height: 30px;
+    font-size: 15px;
+}
+
+section .sec .EP h1{
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #00bbff;
+    text-align: center;
+}
+section .sec .EP p{
+    line-height: 30px;
+    font-size: 15px;
+}
+
+section .sec .text .L h1{
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #00bbff;
+    text-align: center;
+}
+section .sec .L p{
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* section .sec .text h1 {
+    font-size: 30px;
+
+} */
+
+footer {
+    background-color: #00bbff;
+    height: 70px;
+}
+
+footer .foot {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    color: white;
+}
+footer .foot a{
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .cards{
+        flex-flow: column wrap;
+        row-gap: 20px;
+    }
+    section .container{
+        width: 100%;
+       
+    }
+    section .sec {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 40px;
+    }
+    section  .sec .p1 img{
+        width: 100%;
+    
+    }
+}
+
+
+
+/*@media screen and (max-width: 576px) {
+    .cards {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 20px;
+    }
+
+    section .container {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    section .sec {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 40px;
+    }
+    section  .sec .p1 img{
+        width: 100%;
+    
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 780px) {
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 20px;
+
+    }
+
+    section .container {
+        width: 49%;
+    }
+    section .sec{
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 20px;
+    }
+
+}
+*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="per">
+                <a href="#kouakou">Identité</a>
+            </div>
+            <div class="D">
+                <a href="#diplome">Diplomes</a>
+            </div>
+            <div class="E">
+                <a href="#experiences">Experiences professionnelles</a>
+            </div>
+            <div class="c">
+                <a href="#competences">Competences</a>
+            </div>
+            <div class="L">
+                <a href="#LOISIRS">Loisirs</a>
+            </div>
+            <div class="V">
+                <a href="images/mon cv.pdf">Mon CV</a>
+            </div>
+        </nav>
+    </header>
+   <section>
+        <div class="sec">
+            <div class="p1">
+                <img src="images/IMG_20220521_095949_970.jpg" alt="">
+                <div class="PR">
+                <div class="K">
+                <h1 id="kouakou"> KOUAKOU </h1>
+                <h1>N'DA KOUAKOU JEAN D'ARC</h1>
+                </div>
+                <P>CONTACT: 0555607071/0789585913</P>
+                <p>EMAIL: jeandarckouakou49@gmail.com</p>
+                <p>VILLE: ABIDAJN-ABOBO</p>
+                <div class="C"><h1>CELIBATAIRE SANS ENFANTS</h1></div>
+                <div class="N"><h1>IVOIRINNE</h1></div>
+                <div class="L">
+                    <h1>LANGUES</h1>
+                    <p>FRANÇAIS (lu, parlé écrit)</p>
+                    <p>ANGLAIS (passable)</p>
+                    <p>BAOULE (lu, parlé écrit)</p>
+
+                </div>
+
+                </div>
+            </div>
+            <div class="text">
+                <div class="E"><h1>ETUDIANT</h1></div>
+                <div class="D">
+                    <h1 id="diplomes">DIPLOMES</h1>
+                    <p>2021-2022 DEUG II A L'UNIVERSITE VIRTUELLE DE COTE D'IVOIRE</p>
+                    <p>2019-2020 OBTENTION DU BAC D AU COLLEGE MODERNE LA FAYETTE SAN PEDRO</p>
+                    <p>2014-2015 OBTENTION DU BEPC AU LYCEE MUNICIPAL DE SAN PEDRO</p>
+                    <p>2010-2011 OBTENTION DU CEPE A EPP SAPH4</p>
+                </div>
+                <div class="F">
+                    <h1 id="experiences">EXPERIENCES PROFESSIONNELLES</h1>
+                    <p>2019-2023 COUR A DOMICILE</p>
+                    <p>JUIN-AOUT 2022 AGENT COMMERCIAL A CANAL BOX</p>
+                    <p>MARS-JUIN PROMOTEUR A ORANGE </p>
+                    <p>2019-2021 PROMOTEUR A MTN</p> 
+                </div>
+                <div class="EP">
+                    <h1 id="competences">COMPETENCES</h1>
+                    <p>HTML, CSS</p>
+                    <p>WORD</p>
+                    <p>EXCEL</p>
+                    <p>POWER POINT</p>
+                </div>
+                <div class="L">
+                    <h1 id="LOISIRS">LOISIRS</h1>
+                    <p>LECTURE</p>
+                    <p>FOOTBALL</p>
+                    <p>MUSIQUE</p>
+                </div>
+                
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <h3><a href="mailto:jeandarckouakou49@gmail.com">Contactez-moi </a></h3>
+            <p>&copy; JEAN D'ARC 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
